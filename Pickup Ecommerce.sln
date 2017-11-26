@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pickup.com", "Pickup.com\Pickup.com.csproj", "{00953D32-2EEA-4363-80DD-D3F9009AA7B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{ECE65C0D-2E34-450E-990D-8AFD0163CC60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00953D32-2EEA-4363-80DD-D3F9009AA7B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00953D32-2EEA-4363-80DD-D3F9009AA7B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00953D32-2EEA-4363-80DD-D3F9009AA7B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00953D32-2EEA-4363-80DD-D3F9009AA7B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECE65C0D-2E34-450E-990D-8AFD0163CC60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECE65C0D-2E34-450E-990D-8AFD0163CC60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECE65C0D-2E34-450E-990D-8AFD0163CC60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECE65C0D-2E34-450E-990D-8AFD0163CC60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

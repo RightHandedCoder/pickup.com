@@ -1,0 +1,35 @@
+﻿@model DataAccess.SellerLogin
+
+@{
+    ViewBag.Title = "LoginInfo";
+    Layout = "~/Views/Shared/Seller/_LayoutSellerProfile.cshtml";
+}
+
+<h2>LoginInfo</h2>
+
+<div>
+    <h4>SellerLogin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.Display("*#*#*#")
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back", "ViewProfile")
+</p>

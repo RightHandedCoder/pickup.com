@@ -1,0 +1,63 @@
+﻿@model IEnumerable<DataAccess.Product>
+
+@{
+    ViewBag.Title = "Pickup.com";
+
+    if (Session["BID"] != null)
+    {
+        Layout = "~/Views/Shared/Buyer/_LayoutBuyer.cshtml";
+    }
+
+    else if (Session["SID"] != null)
+    {
+        Layout = "~/Views/Shared/Seller/_LayoutSeller.cshtml";
+    }
+
+    else
+    {
+        Layout = "~/Views/Shared/_LayoutHome.cshtml";
+    }
+}
+
+<h2>Available Products</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.ActionLink("Add To Cart", "AddToCart", new { id=item.ProductId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProductId }) |
+        </td>
+    </tr>
+}
+
+</table>
+
+<div>
+    @{
+        if(Session["BID"]==null && Session["AID"]==null && Session["SID"]==null)
+        {
+            @Html.ActionLink("Employee Login", "EmployeeLogin", "Home")
+        }
+
+    }
+         
+</div>
+
+

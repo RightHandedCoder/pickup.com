@@ -1,0 +1,13 @@
+.sidebar
+{
+	border-right:1px solid black;
+	border-bottom: 0px;
+}
+.bg-lightgray
+{
+    background-color:LightGray;
+}
+.dhon
+{
+    width: 200px;
+}

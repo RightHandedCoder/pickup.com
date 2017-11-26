@@ -1,0 +1,12 @@
+.sidebar
+{
+	border-right:1px solid black;
+	border-bottom: 0px;
+}
+.bg-lightgray
+{
+    background-color:LightGray;
+}
+form-control.dhon {
+    width: 550px;
+}

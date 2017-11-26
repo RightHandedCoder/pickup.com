@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Login As</h2>
+@Html.ActionLink("As Buyer", "BuyerLogin", "Login", null, new { @class = "btn btn-primary btn-large" })
+@Html.ActionLink("As Seller", "SellerLogin", "Login", null, new { @class = "btn btn-primary btn-large" })
+

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<DataAccess.Buyer>
+
+@{
+    ViewBag.Title = "BuyerList";
+    Layout = "~/Views/Shared/Admin/_LayoutAdmin.cshtml";
+}
+
+<h2>BuyerList</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Approval.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Approval.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id=item.BuyerId }) |
+            @Html.ActionLink("Approve", "ApproveBuyer", new { id = item.BuyerId }) |
+            @Html.ActionLink("Unapprove", "UnapproveBuyer", new { id = item.BuyerId }) 
+        </td>
+    </tr>
+}
+
+</table>
